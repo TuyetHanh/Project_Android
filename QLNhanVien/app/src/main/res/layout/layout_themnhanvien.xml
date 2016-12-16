@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+   <EditText
+       android:id="@+id/editThemTenNhanVien"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignParentTop="true"
+       android:layout_centerHorizontal="true"
+       android:layout_marginTop="15dp"
+       android:ems="10"
+       android:inputType="textPersonName"
+       android:hint="Nhập tên nhân viên">
+
+        <requestFocus/>
+   </EditText>
+
+    <RadioGroup
+        android:id="@+id/rdGioiTinh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editThemTenNhanVien"
+        android:layout_alignRight="@+id/editThemTenNhanVien"
+        android:layout_below="@+id/editThemTenNhanVien"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <RadioButton
+            android:id="@+id/rdNam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Nam"
+            android:layout_gravity="center"/>
+
+        <RadioButton
+            android:id="@+id/rdNu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nữ"/>
+
+    </RadioGroup>
+
+    <Spinner
+        android:id="@+id/spinnerPhongBan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rdGioiTinh"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/editThemDiaChi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinnerPhongBan"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Nhập địa chỉ"/>
+
+    <EditText
+        android:id="@+id/editThemSoDienThoai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editThemDiaChi"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Nhập số điện thoại"/>
+
+    <EditText
+        android:id="@+id/editThemNgaySinh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editThemSoDienThoai"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Nhập ngày sinh"/>
+
+    <EditText
+        android:id="@+id/editThemEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editThemNgaySinh"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Nhập email"/>
+
+    <EditText
+        android:id="@+id/editThemLuong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editThemEmail"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Nhập hệ số lương"/>
+
+    <Button
+        android:id="@+id/btnThemNhanVien"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editThemLuong"
+        android:layout_below="@id/editThemLuong"
+        android:text="Thêm"/>
+
+    <Button
+        android:id="@+id/btnThoatNhanVien"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnThemNhanVien"
+        android:layout_alignBottom="@+id/btnThemNhanVien"
+        android:layout_alignRight="@+id/editThemLuong"
+        android:layout_marginRight="25dp"
+        android:text="Thoát"/>
+
+
+</RelativeLayout>

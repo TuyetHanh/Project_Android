@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">QLNhanVien</string>
+    
+    
+    <string name="tendangnhap">Đăng nhập</string>
+    <string name="hinttendangnhap">Nhập tài khoản</string>
+    <string name="hintmatkhau">Nhập mật khẩu</string>
+    <string name="dongy">Đồng ý</string>
+    <string name="thoat">Thoát</string>
+    <string name="titleDangKy">Đăng ký</string>
+    <string name="taikhoandangky">Nhập tên tài khoản</string>
+    <string name="hintnhaplaimatkhau">Nhập lại mật khẩu</string>
+    <string name="menuItemNhanVien">Nhân Viên</string>
+    <string name="menuItemPhongBan">Phòng Ban</string>
+    <string name="menuItemHeThong">Hệ Thống</string>
+    <string name="menuItemLienHe">Liên Hệ</string>
+
+
+</resources>

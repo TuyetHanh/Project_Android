@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvTenNhanVien"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="16dp"
+        android:text="TextView"
+        android:textColor="#ee1246"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:id="@+id/vGioiTinh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_marginTop="11dp"
+        android:layout_below="@+id/vSoDienThoai"
+        android:layout_alignLeft="@+id/vSoDienThoai"
+        android:layout_alignStart="@+id/vSoDienThoai" />
+
+    <TextView
+        android:id="@+id/vSoDienThoai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:layout_below="@+id/tvTenNhanVien"
+        android:layout_alignLeft="@+id/tvTenNhanVien"
+        android:layout_alignStart="@+id/tvTenNhanVien"
+        android:layout_marginTop="11dp" />
+
+</RelativeLayout>

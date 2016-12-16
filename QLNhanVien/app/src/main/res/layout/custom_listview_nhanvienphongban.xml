@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvTenNhanVien"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="24dp"
+        android:text="Tên nhân viên"
+        android:textSize="20dp"
+        android:textColor="#ee1245"/>
+
+    <TextView
+        android:id="@+id/tvChucVu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chức vụ"
+        android:layout_marginTop="11dp"
+        android:layout_below="@+id/tvSoDienThoai"
+        android:layout_alignLeft="@+id/tvSoDienThoai"
+        android:layout_alignStart="@+id/tvSoDienThoai" />
+
+    <TextView
+        android:id="@+id/tvSoDienThoai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Số điện thoại"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/tvTenNhanVien"
+        android:layout_alignLeft="@+id/tvTenNhanVien"
+        android:layout_alignStart="@+id/tvTenNhanVien" />
+</RelativeLayout>

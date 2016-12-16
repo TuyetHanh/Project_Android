@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/editSuaTenNhanVien"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Nhập tên nhân viên">
+
+        <requestFocus/>
+    </EditText>
+
+    <RadioGroup
+        android:id="@+id/rdSuaGioiTinh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editSuaTenNhanVien"
+        android:layout_alignRight="@+id/editSuaTenNhanVien"
+        android:layout_below="@+id/editSuaTenNhanVien"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <RadioButton
+            android:id="@+id/rdNam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Nam"
+            android:layout_gravity="center"/>
+
+        <RadioButton
+            android:id="@+id/rdNu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nữ"/>
+
+    </RadioGroup>
+
+    <Spinner
+        android:id="@+id/spinnerSuaPhongBan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rdSuaGioiTinh"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/editSuaDiaChi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinnerSuaPhongBan"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Nhập địa chỉ"/>
+
+    <EditText
+        android:id="@+id/editSuaSoDienThoai"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editSuaDiaChi"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Nhập số điện thoại"/>
+
+    <EditText
+        android:id="@+id/editSuaNgaySinh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editSuaSoDienThoai"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Nhập ngày sinh"/>
+
+    <EditText
+        android:id="@+id/editSuaEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editSuaNgaySinh"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Nhập email"/>
+
+    <EditText
+        android:id="@+id/editSuaLuong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editSuaEmail"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Nhập hệ số lương"/>
+
+    <Button
+        android:id="@+id/btnCapNhatNhanVien"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editSuaLuong"
+        android:layout_below="@id/editSuaLuong"
+        android:text="Sửa"/>
+
+    <Button
+        android:id="@+id/btnThoatCapNhatNhanVien"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnCapNhatNhanVien"
+        android:layout_alignBottom="@+id/btnCapNhatNhanVien"
+        android:layout_alignRight="@+id/editSuaLuong"
+        android:layout_marginRight="25dp"
+        android:text="Thoát"/>
+
+
+</RelativeLayout>
